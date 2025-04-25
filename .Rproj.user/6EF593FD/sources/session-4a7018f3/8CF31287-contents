@@ -1,0 +1,251 @@
+---
+title: "Datos de observación de la tierra"
+subtitle: "para evaluar el efecto del cambio climático en el cambio de uso de suelo a lo largo de Chile"
+author: Francisco Zambrano et al.
+institute: Universidad Mayor
+logo: logo_odes.png
+theme: default
+bibliography: referencias.bib
+website:
+  favicon: https://raw.githubusercontent.com/ODES-Chile/ODES-Chile.github.io/main/assets/img/Isotip_gradiente_azul.png
+title-slide-attributes:
+    data-background-image: "bg.jpg"
+    data-background-size: cover
+    data-background-opacity: ".4"
+format: 
+  revealjs:
+    slide-number: h.v
+    transition: fade
+---
+
+## Contexto {background-image="HEMERA_UM_color.png" background-position="97.5% 2.5%" background-size="7.5%" layout="true"}
+
+- Las sequías se están volviendo más frecuentes, intensas y duraderas a nivel mundial [@IPCC2023].
+- Impactan la disponibilidad hídrica, la productividad de la vegetación y la cobertura de suelo.
+- Chile es un laboratorio natural por su diversidad ecológica y climática.
+
+---
+
+## Objetivos del estudio {background-image="HEMERA_UM_color.png" background-position="97.5% 2.5%" background-size="7.5%" layout="true"}
+
+- Evaluar la `tendencia` en índices de `sequía multi-escala` asociados a oferta y demanda de agua paea `2000-2024`.
+
+- `Analizar` los efectos de la `oferta y demanda` de agua sobre la `productividad` de la `vegetación` y el cambio en la `cobertura del suelo`.
+
+---
+
+## Clasificación de sequías {background-image="HEMERA_UM_color.png" background-position="97.5% 2.5%" background-size="7.5%" layout="true"}
+
+1. `Meteorológica:` baja precipitación [@Mishra2010].
+2. `Hidrológica:` impacto en caudales, aguas subterráneas y embalses [@VanLoon2015;@VanLoon2016b].
+3. `Agrícola:` efectos sobre la producción de cultivos y praderas[@Wilhite1985].
+4. `Ecológica:` efectos en servicios ecosistémicos [@Crausbay2017].
+
+---
+
+## Área de estudio {background-image="HEMERA_UM_color.png" background-position="97.5% 2.5%" background-size="7.5%" layout="true"}
+
+- Chile continental (7 ecorregiones).
+- Gradientes climáticos y topográficos marcados.
+- Diversidad de tipos de cobertura: bosques, matorrales, sabanas, praderas, etc.
+
+## {background-image="figs/mapa_area_estudio_final.png" background-size='contain'}
+
+---
+
+## Datos utilizados {background-image="HEMERA_UM_color.png" background-position="97.5% 2.5%" background-size="7.5%" layout="true"}
+
+Series temporales mensuales para 2000-2024:
+
+- `MODIS:` NDVI (MOD13A3), Evapotranspiración (MOD16A2), cobertura de suelo (MCD12Q1).
+- `ERA5-Land:` precipitación, temperatura y humedad de suelo.
+- `Otros:` Densidad de caminos, incendios y luces nocturnas.
+
+---
+
+## Índices de sequía utilizados {background-image="HEMERA_UM_color.png" background-position="97.5% 2.5%" background-size="7.5%" layout="true"}
+
+- `SPI:` precipitación [@McKee1993;@McKee1995].
+- `SPEI:` precipitación - demanda atmosférica [@Vicente-Serrano2010].
+- `SSI:` humedad de suelo [@Hao2013].
+- `EDDI:` demanda evaporativa atmosférica [@Hobbins2016;@McEvoy2016].
+- `SETI` evapotranspiración real [@Paruelo2016].
+
+---
+
+## Cálculo de índices multiescalares {background-image="HEMERA_UM_color.png" background-position="97.5% 2.5%" background-size="7.5%" layout="true"}
+
+- Análisis en escalas de 1 a 36 meses.
+- Uso de métodos no paramétricos.
+- Cálculo mensual de anomalías.
+
+---
+
+## Tendencias en índices de sequía {background-image="HEMERA_UM_color.png" background-position="97.5% 2.5%" background-size="7.5%" layout="true"}
+
+- Tendencias positivas de EDDI (demanda atmosférica) en todas las ecoregiones.
+- Disminución de SPI y SSI (oferta hídrica) en Matorral, Estepa y Bosque Valdiviano.
+
+![](figs/trend_macrozone_drought_indices.png){fig-align='center'}
+
+
+## Comportamiento opuesto en SETI y EDDI {background-image="HEMERA_UM_color.png" background-position="97.5% 2.5%" background-size="7.5%" layout="true"}
+
+- En zonas áridas, aumento de EDDI no genera aumento en SETI.
+- Vegetación no puede responder por falta de agua.
+
+![](figs/trend_macrozone_drought_indices.png){fig-align='center'}
+
+---
+
+## Productividad vegetal {background-image="HEMERA_UM_color.png" background-position="97.5% 2.5%" background-size="7.5%" layout="true"}
+
+- `zcNDVI:` Anomalía de NDVI acumulado como proxy de productividad.
+- Análisis con zcNDVI en escala de 6 meses.
+- Tendencias negativas en Matorral y Estepa Patagónica.
+
+
+## {background-image="figs/temporal_variation_zcNDVI6_ecoregiones_con_mapa.png" background-size="contain"}
+
+
+---
+
+## Correlación entre sequía y productividad {background-image="HEMERA_UM_color.png" background-position="97.5% 2.5%" background-size="7.5%" layout="true"}
+
+- Altas correlaciones entre SETI/SSI y zcNDVI.
+- Respuestas variables según tipo de vegetación y región.
+
+## {background-image="figs/mapa_cor_r_indices_zcNDVI6.png" background-size="contain"}
+
+---
+
+## Cobertura de suelo: macroclases {background-image="HEMERA_UM_color.png" background-position="97.5% 2.5%" background-size="7.5%" layout="true"}
+
+- Agrupadas en 10 clases: 
+  * bosques, matorrales, sabanas, praderas, cultivos, suelo desnudo, urbano, humedales, hielo/nieve, agua.
+
+---
+
+## Cambios de cobertura {background-image="HEMERA_UM_color.png" background-position="97.5% 2.5%" background-size="7.5%" layout="true"}
+
+- Aumento de bosque en Matorral y Bosque Valdiviano.
+- Disminución de sabanas en múltiples regiones.
+- Aumento de suelo desnudo en puna y estepa andina.
+
+## {background-image="figs/fig_table_var_landcover_ecoregions.png" background-size='contain'}
+
+---
+
+## Modelos Random Forest {background-image="HEMERA_UM_color.png" background-position="97.5% 2.5%" background-size="7.5%" layout="true"}
+
+- Modelos por clase de cobertura y escala temporal.
+- `Variable respuesta:` tendencia en cobertura de suelo
+- `Variables explicativas:` tendencia índices de sequía, luces nocturnas, incendios, caminos.
+- Se utilizaron 485 subcuencas a lo largo de Chile continental
+
+---
+
+## Resultados claves por clase {background-image="HEMERA_UM_color.png" background-position="97.5% 2.5%" background-size="7.5%" layout="true"}
+
+- `Matorrales:` cambios altamente explicados por sequía (R² > 0.7).
+- `Cultivos:` afectados por incendios más que sequía.
+- `Bosques:` menor relación con sequía.
+
+## {background-image="figs/comparison_r-squared_between_scales_of_drought_indices.png" background-size="contain"}
+
+---
+
+## Importancia de variables {background-image="HEMERA_UM_color.png" background-position="97.5% 2.5%" background-size="7.5%" layout="true"}
+
+- SETI y SSI predominan como predictores.
+- Áreas quemadas explican cambios en cultivos.
+
+---
+
+## {background-image="figs/bars_relative_importance_RF_scale_max_r2.png" background-size='contain'}
+
+---
+
+## Limitaciones del estudio {background-image="HEMERA_UM_color.png" background-position="97.5% 2.5%" background-size="7.5%" layout="true"}
+
+- Uso de datos de observación de la tierra con incertidumbre.
+- No se distingue entre bosque nativo y plantaciones.
+- Complejidad en atribución de cambios a factores humanos.
+
+---
+
+## Discusión {background-image="HEMERA_UM_color.png" background-position="97.5% 2.5%" background-size="7.5%" layout="true"}
+- La sequía prolongada impacta productividad y cobertura.
+- La vegetación responde según tipo y duración del estrés hídrico.
+
+---
+website:
+  favicon: https://raw.githubusercontent.com/ODES-Chile/ODES-Chile.github.io/main/assets/img/Isotip_gradiente_azul.png
+## Efectos indirectos {background-image="HEMERA_UM_color.png" background-position="97.5% 2.5%" background-size="7.5%" layout="true"}
+
+- Incendios como disparador de cambio en uso del suelo.
+- Luces nocturnas correlacionadas con aumento de suelo desnudo.
+
+---
+
+## Implicancias {background-image="HEMERA_UM_color.png" background-position="97.5% 2.5%" background-size="7.5%" layout="true"}
+
+- Importancia de adaptar estrategias de conservación y uso de suelo.
+- Detección multiescalar ayuda a anticipar impactos.
+
+---
+
+## Conclusiones {background-image="HEMERA_UM_color.png" background-position="97.5% 2.5%" background-size="7.5%" layout="true"}
+
+- La sequía afecta la vegetación y uso del suelo de manera multiescalar.
+- SETI y SSI son los mejores predictores de cambio.
+- Adaptaciones deben considerar tipo de vegetación y escala temporal.
+
+---
+
+## Recomendaciones {background-image="HEMERA_UM_color.png" background-position="97.5% 2.5%" background-size="7.5%" layout="true"}
+
+- Monitoreo multiescalar.
+- Mejora en clasificación de coberturas.
+- Integración de datos sociales y económicos.
+
+---
+
+## Futuras líneas de investigación {background-image="HEMERA_UM_color.png" background-position="97.5% 2.5%" background-size="7.5%" layout="true"}
+
+- Diferenciar coberturas dentro de macroclases.
+- Evaluar impactos en servicios ecosistémicos.
+- Considerar variables socioeconómicas.
+
+---
+
+## Datos y código {background-image="HEMERA_UM_color.png" background-position="97.5% 2.5%" background-size="7.5%" layout="true"}
+
+- Repositorio GitHub: https://github.com/FSEQ210022/drought_vegetation
+- Datasets en Zenodo: https://doi.org/10.5281/zenodo.10359547
+
+---
+
+## Agradecimientos {background-image="HEMERA_UM_color.png" background-position="97.5% 2.5%" background-size="7.5%" layout="true"}
+
+- ANID:
+
+  - FSEQ210022, 
+  - Fondecyt Iniciación 11190360, 
+  - Fondecyt Postdoctorado 3230678, 
+  - Fondecyt Regular 1210526
+  
+- Instituciones Colaboradoras: UMayor, PUC, UOH, Universidad de Twente.
+
+---
+
+## ¡Gracias! {background-image="HEMERA_UM_color.png" background-position="97.5% 2.5%" background-size="7.5%" layout="true"}
+
+# ¿Preguntas?
+
+## Referencias {background-image="HEMERA_UM_color.png" background-position="97.5% 2.5%" background-size="7.5%" layout="true"}
+
+::: {#refs}
+:::
+
+
