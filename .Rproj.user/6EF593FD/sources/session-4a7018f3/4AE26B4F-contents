@@ -10,6 +10,7 @@ bibliography: referencias.bib
 format: 
   revealjs:
     slide-number: h.v
+    footer: "presentación: [https://francisco-zambrano.cl/copernicus-abril2025](https://francisco-zambrano.cl/copernicus-abril2025)"
 title-slide-attributes:
     data-background-image: "bg.jpg"
     data-background-size: cover
