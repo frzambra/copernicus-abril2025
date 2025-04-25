@@ -10,6 +10,7 @@ bibliography: referencias.bib
 format: 
   revealjs:
     slide-number: h.v
+    footer: "presentación: [https://francisco-zambrano.cl/copernicus-abril2025](https://francisco-zambrano.cl/copernicus-abril2025)"
 title-slide-attributes:
     data-background-image: "bg.jpg"
     data-background-size: cover
@@ -19,9 +20,9 @@ title-slide-attributes:
 ## Contexto {background-image="HEMERA_UM_color.png" background-position="97.5% 2.5%" background-size="7.5%" layout="true"}
 
 - Las sequías se están volviendo más frecuentes, intensas y duraderas a nivel mundial [@IPCC2023].
+- Sequía en Chile (Mega-sequía, hiper-sequía)
 - Impactan la disponibilidad hídrica, la productividad de la vegetación y la cobertura de suelo.
 - Chile es un laboratorio natural por su diversidad ecológica y climática.
-
 ---
 
 ## Objetivos del estudio {background-image="HEMERA_UM_color.png" background-position="97.5% 2.5%" background-size="7.5%" layout="true"}
