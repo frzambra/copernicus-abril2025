@@ -114,6 +114,8 @@ Series temporales mensuales para 2000-2024:
 - Altas correlaciones entre SETI/SSI y zcNDVI.
 - Respuestas variables según tipo de vegetación y región.
 
+![](figs/tabla_r_cor_macro_indice.png)
+
 ## {background-image="figs/mapa_cor_r_indices_zcNDVI6.png" background-size="contain"}
 
 ---
@@ -209,7 +211,7 @@ Series temporales mensuales para 2000-2024:
 
 ---
 
-## Futuras líneas de investigación {background-image="HEMERA_UM_color.png" background-position="97.5% 2.5%" background-size="7.5%" layout="true"}
+## Trabajo futuro {background-image="HEMERA_UM_color.png" background-position="97.5% 2.5%" background-size="7.5%" layout="true"}
 
 - Diferenciar coberturas dentro de macroclases.
 - Evaluar impactos en servicios ecosistémicos.
@@ -219,8 +221,8 @@ Series temporales mensuales para 2000-2024:
 
 ## Datos y código {background-image="HEMERA_UM_color.png" background-position="97.5% 2.5%" background-size="7.5%" layout="true"}
 
-- Repositorio GitHub: https://github.com/FSEQ210022/drought_vegetation
-- Datasets en Zenodo: https://doi.org/10.5281/zenodo.10359547
+- Repositorio GitHub: [https://github.com/FSEQ210022/drought_vegetation](https://github.com/FSEQ210022/drought_vegetation)
+- Datasets en Zenodo: [https://doi.org/10.5281/zenodo.10359547](https://doi.org/10.5281/zenodo.10359547)
 
 ---
 
